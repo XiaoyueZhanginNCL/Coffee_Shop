@@ -371,6 +371,16 @@ section{
 
         }
     }
+
+    .about{
+        h4{
+            padding-top:2rem;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width:450px){

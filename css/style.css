@@ -286,6 +286,13 @@ section {
     margin: 1rem 2rem;
     color: #222;
   }
+  .about h4 {
+    padding-top: 2rem;
+  }
+  .about a {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 450px) {
   html {
