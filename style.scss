@@ -8,7 +8,7 @@
     outline: none; 
     border: none;
     text-decoration: none !important;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 }
 
 $main-color:#512a10;
@@ -231,8 +231,66 @@ section{
     background: url(../images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+
+    span{
+        font-size: 2.5rem;
+        color: $white;
+    }
+
+    h3{
+        padding: 1rem 0;
+        font-size: 6rem;
+        color: $white;
+    }
+
+    .link-btn{
+        color: $white;
+        border-color: $white;
+    }
 }
 
+.about{
+    h4{
+        font-size: 3rem;
+        color:$main-color;
+        padding-bottom: 3rem;
+    }
+
+    .title{
+        @include title-text(3rem);
+        padding-bottom: 1rem;
+    }
+
+    p{
+        padding-bottom: 2rem;
+        @include graph-text(1.6rem);
+    }
+
+    .icons-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        gap:1.5rem;
+
+        .icons{
+            padding: 2rem;
+            background: $light-bg;
+            text-align: center;
+            flex: 1 1 14rem;
+
+            i{
+                font-size: 4rem;
+                margin-bottom: 1.5rem;
+                color: $main-color;
+            }
+
+            h3{
+                @include title-text(1.5rem);
+            }
+        }
+    }
+}
 
 
 
@@ -258,9 +316,25 @@ section{
         font-size: 55%;
         scroll-padding-top: 8rem;
     }
+
+    .home h3{
+        font-size: 4rem;
+    }
+
+    .section{
+        padding: 3rem 0;
+    }
 }
 
 @media (max-width:768px){
+
+    .login-form form{
+        padding: 3rem 2rem;
+
+        h3{
+            font-size: 1.7rem;
+        }
+    }
     .header{
         padding:4rem 2rem;
 
@@ -301,6 +375,6 @@ section{
 
 @media (max-width:450px){
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
 }

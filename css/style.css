@@ -181,6 +181,61 @@ section {
   background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+}
+.home span {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.home h3 {
+  padding: 1rem 0;
+  font-size: 6rem;
+  color: #fff;
+}
+.home .link-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.about h4 {
+  font-size: 3rem;
+  color: #512a10;
+  padding-bottom: 3rem;
+}
+.about .title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #222;
+  padding-bottom: 1rem;
+}
+.about p {
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+  margin-bottom: 0;
+}
+.about .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  gap: 1.5rem;
+}
+.about .icons-container .icons {
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+  flex: 1 1 14rem;
+}
+.about .icons-container .icons i {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #512a10;
+}
+.about .icons-container .icons h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #222;
 }
 
 @media (max-width: 991px) {
@@ -188,8 +243,20 @@ section {
     font-size: 55%;
     scroll-padding-top: 8rem;
   }
+  .home h3 {
+    font-size: 4rem;
+  }
+  .section {
+    padding: 3rem 0;
+  }
 }
 @media (max-width: 768px) {
+  .login-form form {
+    padding: 3rem 2rem;
+  }
+  .login-form form h3 {
+    font-size: 1.7rem;
+  }
   .header {
     padding: 4rem 2rem;
   }
@@ -222,7 +289,7 @@ section {
 }
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 
